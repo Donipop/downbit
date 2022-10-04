@@ -5,10 +5,11 @@
 <configuration>
     <typeAliases>
         <typeAlias type="dto.USER" alias="user"/>
+        <typeAlias type="dto.Account" alias="account"/>
     </typeAliases>
 
-    <mappers>
+    <!--<mappers>
         <mapper resource="mapper/UserMapper.xml"/>
-    </mappers>
+    </mappers>-->
 
 </configuration>

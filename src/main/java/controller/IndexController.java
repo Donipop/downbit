@@ -9,4 +9,5 @@ public class IndexController {
     public String getindex(){
         return "index";
     }
+
 }

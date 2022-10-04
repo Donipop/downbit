@@ -9,27 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/downbit_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/USER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DBconfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="f">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/redis-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +37,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -69,16 +70,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ws/java3/downbit",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.40054995"
+    "project.structure.side.proportion": "0.40054995",
+    "settings.editor.selected.configurable": "spring",
+    "spring.configuration.checksum": "09e599918620fccce0d27af783da18f4"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dto" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ws\java3\downbit\src\main\resources" />
       <recent name="D:\ws\java3\downbit\web\WEB-INF" />
+      <recent name="D:\ws\java3\downbit\src\main\resources" />
       <recent name="D:\ws\java3\downbit\web\WEB-INF\view" />
     </key>
   </component>
@@ -229,9 +237,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest.test" />
+        <item itemvalue="JUnit.DBconfigTest.testSession" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.DBconfigTest" />
-        <item itemvalue="JUnit.DBconfigTest.testSession" />
         <item itemvalue="JUnit.DBconfigTest.testMyBatis" />
       </list>
     </recent_temporary>
@@ -244,8 +252,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664501359341</updated>
-      <workItem from="1664501361564" duration="13552000" />
+      <workItem from="1664501361564" duration="15213000" />
+      <workItem from="1664842314301" duration="20841000" />
     </task>
+    <task id="LOCAL-00001" summary="f">
+      <created>1664518243675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664518243675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,10 +273,30 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="f" />
+    <option name="LAST_COMMIT_MESSAGE" value="f" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
