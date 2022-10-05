@@ -4,8 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias type="dto.USER" alias="user"/>
         <typeAlias type="dto.Account" alias="account"/>
+        <typeAlias type="dto.USER" alias="user"/>
+
     </typeAliases>
 
     <!--<mappers>

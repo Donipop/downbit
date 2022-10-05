@@ -5,7 +5,6 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@Repository
 public class UserDaoImpl implements UserDao {
 
     private final SqlSession session;
@@ -24,5 +23,10 @@ public class UserDaoImpl implements UserDao {
     @Override
     public USER selectUser(int userid) {
         return session.selectOne("mapper.UserMapper.selectUser", userid);
+    }
+
+    @Override
+    public USER findUserByusername(String username) {
+        return session.selectOne("mapper.UserMapper.findUserByusername", username);
     }
 }

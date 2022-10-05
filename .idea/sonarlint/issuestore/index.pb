@@ -1,8 +1,6 @@
 
-X
-(.idea/artifacts/downbit_war_exploded.xml,7\5\75ace52943cfba76c5f48c370113a2b1a92c2604
-J
-web/WEB-INF/view/index.jsp,b\6\b6435e012c9f43775af4a05e21f76e7ef2e436a6
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+O
+src/test/java/DBconfigTest.java,4\f\4f44797b828e93598f343c0189675a636675048a
