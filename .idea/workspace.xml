@@ -9,31 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="redis 설정중">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f44797b828e93598f343c0189675a636675048a" afterDir="false" />
+    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="서큐리티 적용중">
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75ace52943cfba76c5f48c370113a2b1a92c2604" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ceec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CustomAuthenticationProvide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/security-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/login_success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/downbit_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/downbit_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f44797b828e93598f343c0189675a636675048a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dto/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dto/USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/USER.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/redis-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +41,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -83,8 +80,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ws/java3/downbit",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "D:/ws/java3/downbit/web",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.17391305",
     "settings.editor.selected.configurable": "spring",
@@ -93,6 +90,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="repository" />
       <recent name="dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -256,6 +254,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="" />
@@ -266,7 +267,8 @@
       <workItem from="1664501361564" duration="15213000" />
       <workItem from="1664842314301" duration="20924000" />
       <workItem from="1664928423562" duration="5553000" />
-      <workItem from="1664934926643" duration="15267000" />
+      <workItem from="1664934926643" duration="15306000" />
+      <workItem from="1665016989241" duration="22606000" />
     </task>
     <task id="LOCAL-00001" summary="f">
       <created>1664518243675</created>
@@ -282,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664873404296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="서큐리티 적용중">
+      <created>1664959769878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664959769878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +323,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="f" />
     <MESSAGE value="redis 설정중" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis 설정중" />
+    <MESSAGE value="서큐리티 적용중" />
+    <option name="LAST_COMMIT_MESSAGE" value="서큐리티 적용중" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
