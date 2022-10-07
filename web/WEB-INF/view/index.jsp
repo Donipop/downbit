@@ -11,6 +11,7 @@
     <title>Hello</title>
   </head>
   <body>
+  ${userinfo.name}
   Hello Spring
   </body>
 </html>

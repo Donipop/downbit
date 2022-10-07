@@ -11,7 +11,6 @@
         <security:intercept-url pattern="/**" access="hasAnyRole('ROLE_USER')"/>
 
 
-
         <security:form-login login-page="/login"
                              username-parameter="username"
                              password-parameter="password"
@@ -19,18 +18,29 @@
         default-target-url="/login_success"
         authentication-failure-url="/login"
         always-use-default-target="true"/>
-        <security:session-management>
-<!--            중복로그인방지-->
-            <!--<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>-->
-        </security:session-management>
+
+<!--        <security:session-management>-->
+
+<!--&lt;!&ndash;            중복로그인방지&ndash;&gt;-->
+<!--            &lt;!&ndash;<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>&ndash;&gt;-->
+<!--        </security:session-management>-->
         <security:logout logout-url="/login?logout>"/>
         <security:csrf disabled="true"/>
+
+        <security:custom-filter ref="JwtAuthenticationFilter" before="FORM_LOGIN_FILTER"/>
+
+
     </security:http>
 
-    <bean class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler"/>
+
     <security:authentication-manager>
-        <security:authentication-provider ref="customAuthenticationProvider" />
+<!--        <security:authentication-provider ref="customAuthenticationProvider"/>-->
+        <security:authentication-provider user-service-ref="customUserDetailsService"/>
     </security:authentication-manager>
 
-    <bean id="customAuthenticationProvider" class="repository.CustomAuthenticationProvide"/>
+    <bean class="service.JwtAuthenticationFilter" id="JwtAuthenticationFilter">
+        <constructor-arg ref="jwtTokenProvider"/>
+    </bean>
+    <bean class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+<!--    <bean id="customAuthenticationProvider" class="repository.CustomAuthenticationProvide"/>-->
 </beans>

@@ -9,29 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="서큐리티 적용중">
+    <list default="true" id="c2a20ed8-f7da-4f22-b7cd-8ad100fd4ed6" name="Changes" comment="jwt 생성해서 넣어주고 페이지에서 받아오는 거까지 해봐야함">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2aa5cce771507f9e50cab854979bd7f9f64fb2a5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33a4bc56b70362ded3cc60ec638889e346bd2cab" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75ace52943cfba76c5f48c370113a2b1a92c2604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a6dae537be9f47878c6964c6ee40cab0ca75e28" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67eb178d523a4b3f117dcbe0eda5196367ceec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CustomAuthenticationProvide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/security-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/login_success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba9fe95bd756bfe72464068db85a2f269d600153" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbdbb7d37c362aed192c9c4624dd346697a509ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CustomUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/JwtTokenProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/downbit_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/downbit_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f44797b828e93598f343c0189675a636675048a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/USER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/CustomAuthenticationProvide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/CustomAuthenticationProvide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/security-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/security-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +43,8 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,15 +81,16 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/ws/java3/downbit/web",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.17391305",
-    "settings.editor.selected.configurable": "spring",
-    "spring.configuration.checksum": "09e599918620fccce0d27af783da18f4"
+    "project.structure.side.proportion": "0.30717862",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "e3673d9a2cd884940c8c6d254e23309b"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="service" />
       <recent name="repository" />
       <recent name="dto" />
     </key>
@@ -246,10 +247,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainTest.test" />
-        <item itemvalue="JUnit.DBconfigTest.testSession" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.DBconfigTest" />
+        <item itemvalue="JUnit.DBconfigTest.testSession" />
         <item itemvalue="JUnit.DBconfigTest.testMyBatis" />
+        <item itemvalue="JUnit.DBconfigTest" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +269,9 @@
       <workItem from="1664842314301" duration="20924000" />
       <workItem from="1664928423562" duration="5553000" />
       <workItem from="1664934926643" duration="15306000" />
-      <workItem from="1665016989241" duration="22606000" />
+      <workItem from="1665016989241" duration="22909000" />
+      <workItem from="1665101562396" duration="2323000" />
+      <workItem from="1665106035788" duration="21746000" />
     </task>
     <task id="LOCAL-00001" summary="f">
       <created>1664518243675</created>
@@ -291,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664959769878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="jwt 생성해서 넣어주고 페이지에서 받아오는 거까지 해봐야함">
+      <created>1665045909876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665045909876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +334,8 @@
     <MESSAGE value="f" />
     <MESSAGE value="redis 설정중" />
     <MESSAGE value="서큐리티 적용중" />
-    <option name="LAST_COMMIT_MESSAGE" value="서큐리티 적용중" />
+    <MESSAGE value="jwt 생성해서 넣어주고 페이지에서 받아오는 거까지 해봐야함" />
+    <option name="LAST_COMMIT_MESSAGE" value="jwt 생성해서 넣어주고 페이지에서 받아오는 거까지 해봐야함" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
