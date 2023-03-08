@@ -13,7 +13,7 @@ export default function Header() {
                 <nav className={styles.nav}>
                     <ul className={styles.ul}>
                         <li className={styles.li}>
-                            <a href="/about">거래소</a>
+                            <a href="/trade">거래소</a>
                         </li>
                         <li className={styles.li}>
                             <a href="/contact">투자내역</a>
