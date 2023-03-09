@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 export default function Header() {
     const isLogin = false;
   return (
-    <header>
+    <header className={styles.header}>
         <div>
             <div className={styles.main}>
                 <h1>
