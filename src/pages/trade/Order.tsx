@@ -69,10 +69,14 @@ export default function Order() {
                             <span>0 KRW</span>
                         </dd>
                     </dl>
-                    <div className={styles.dl}>
-                        <button type="button" className={styles.btnBuy}>매수</button>
-                        <button type="button" className={styles.btnSell}>매도</button>
-                        <button type="button" className={styles.btnLogin}>로그인</button>
+                    <div className={`${styles.dl} ${styles.btnDiv}`}>
+                        <div>
+                            <button type="button" className={`${styles.btn} ${styles.btnBuySub}`}>초기화</button>
+                            <button type="button" className={`${styles.btn} ${styles.btnBuy}`}>매수</button>
+                        </div>
+                        
+                        <button type="button" className={`${styles.btn} ${styles.btnSell}`}>매도</button>
+                        <button type="button" className={`${styles.btn} ${styles.btnLogin}`}>로그인</button>
                     </div>
                 </div>
             </article>
