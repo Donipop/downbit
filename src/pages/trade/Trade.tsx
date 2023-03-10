@@ -15,7 +15,7 @@ function Trade() {
                 <CodeSelect />
             </div>
             <h1>주문창</h1>
-            <div style={{ width: "480px"}}>
+            <div style={{ width: "504px"}}>
                 <Order />
             </div>
         </main>

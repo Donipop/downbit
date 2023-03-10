@@ -17,59 +17,63 @@ export default function Order() {
                     </ul>
                 </div>
                 <div>
-                    <form className={styles.form}>
-                        <label>주문 유형:</label>
-                        <div>
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="type"
-                                    value="choice"
-                                    checked
-                                />
-                                지정가
-                            </label>
-                            <label>
-                                <input
-                                    type="radio"
-                                    name="type"
-                                    value="market"
-                                />
-                                시장가
-                            </label>
-                        </div>
-                        <br />
-                        <label>주문가능:</label>
-                        <label>0 KRW</label>
-                        <br />
-
-                        <label>매수가격(KRW):</label>
-                        <div className="number-input">
-                            <input
-                                type="number"
-                                min="0"
-                                max="100"
-                                step="1"
-                                value="0"
-                            />
-                            <button className="btn plus-btn">+</button>
-                            <button className="btn minus-btn">-</button>
-                        </div>
-
-                        <br />
-                        <label>주문수량(BTC):</label>
-                        <input type="number" id="price" name="price" />
-                        {/* <input type="number" id="price" name="price" required /> */}
-                        <br />
-                        <label>주문총액(KRW)</label>
-                        <input
-                            type="number"
-                            id="totalPrice"
-                            name="totlaPrice"
-                        />
-                        <br />
-                        <button type="submit">주문하기</button>
-                    </form>
+                    <dl className={styles.dl}>
+                        <dt>
+                            <strong>주문구분</strong>
+                        </dt>
+                        <dd className={styles.checkOption}>
+                            <input type="radio" name="order" id="order1" />
+                            <label htmlFor="order1">지정가</label>
+                            <input type="radio" name="order" id="order2" />
+                            <label htmlFor="order2">시장가</label>
+                        </dd>
+                        <dt>
+                            <strong>주문가능</strong>
+                        </dt>
+                        <dd>
+                            <span>10,000,000 KRW</span>
+                        </dd>
+                        <dt>
+                            <strong>매수가격 (KRW)</strong>
+                        </dt>
+                        <dd>
+                            <span>
+                                <input type="text" />
+                            </span>
+                            <span>
+                                <button type="button" className={styles.btn}>+</button>
+                                <button type="button" className={styles.btn} style={{borderLeft: "none"}}>-</button>
+                            </span>
+                        </dd>
+                        <dt>
+                            <strong>주문수량 (BTC)</strong>
+                        </dt>
+                        <dd>
+                            <span>
+                                <input type="text" />
+                            </span>
+                        </dd>
+                        <dd className={styles.percents}>
+                            <span>
+                                <button type="button">10%</button>
+                                <button type="button">25%</button>
+                                <button type="button">50%</button>
+                                <button type="button">100%</button>
+                                <button type="button">직접입력</button>
+                            </span>
+                        </dd>
+                        <dt>
+                            <strong>주문총액 (KRW)</strong>
+                        </dt>
+                        <dd>
+                            <span>0 KRW</span>
+                        </dd>
+                    </dl>
+                    <div className={styles.dl}>
+                        <button type="button" className={styles.btnBuy}>매수</button>
+                        <button type="button" className={styles.btnSell}>매도</button>
+                        <button type="button" className={styles.btnLogin}>로그인</button>
+                    </div>
                 </div>
             </article>
         </main>

@@ -19,7 +19,7 @@ li div:hover {
     text-decoration: underline;
 }
 .btnA {
-    width: 160px;
+    width: 168px;
     height: 30px;
     text-align: center;
     line-height: 30px;
@@ -41,9 +41,86 @@ li div:hover {
     color: green;
     font-weight: 600;
 }
-.form {
-    width: 480px;
-    height: 100%;
-    padding: 10px 0 0 0;
+.dl {
+    width: 100%;
+    display: block;
     background-color: #f5f5f5;
+    margin: 0;
+    padding-top: 10px;
+}
+.dl dt {
+    width: 134px;
+    height: 30px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    text-align: center;
+}
+.dl dd {
+    width: calc(100% - 134px);
+    height: 30px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.dl dd input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+.dl dd input[type="text"] {
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.checkOption {
+    width: 362px !important;
+    margin-left: -8px !important;
+}
+.checkOption label {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px 0 0 !important;
+    position: relative;
+    top: -4px;
+    left: 4px;
+}
+.percents {
+    width: 370px !important;
+    height: 30px;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin-left: 134px !important;
+}
+.percents button {
+    width: 70px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn {
+    width: 50px;
+    height: 30px;
+    background-color: #e5e5e56b !important;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(35, 35, 35, 0.284);
+}
+.btnBuy {
+    background-color: #ff0000;
+    color: #fff;
+}
+.btnSell {
+    background-color: #00ff00;
+    color: #fff;
+}
+.btnLogin {
+    background-color: blue;
+    color: #fff;
 }
