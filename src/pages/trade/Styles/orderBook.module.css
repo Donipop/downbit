@@ -1,0 +1,16 @@
+.bar {
+    color: #3e54ac;
+    width: 100px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+.bar:nth-child(1) {
+    background-color: #ffacac;
+    border: 1px solid red;
+    height: 100px;
+}
+.price {
+    color: #ffacac;
+    font-weight: 600;
+}
