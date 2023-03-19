@@ -1,16 +1,81 @@
 .bar {
-    color: #3e54ac;
-    width: 100px;
-    height: 200px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #0C1B2B;
+}
+.barBuy {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #291B1D;
+}
+.barChild {
+    background-color: #ffacac;
+    height: 25px;
     margin: 0;
     padding: 0;
 }
-.bar:nth-child(1) {
-    background-color: #ffacac;
-    border: 1px solid red;
-    height: 100px;
+.barChild p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 300;
+    height: 25px;
+}
+.buy {
+    background-color: #582922 !important;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    float : left;
+}
+.sell {
+    background-color: #0E3460 !important;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.sell p {
+    float: right;
+    margin-right: 10px;
+    font-weight: 400;
+}
+.buy p {
+    float: left;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.table{
+    width: 500px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.table td{
+    border: 1px solid black;
 }
 .price {
+    color: #fff;
+    font-weight: 600;
+}
+.priceBuy {
+    color: #0E3460;
+    font-weight: 600;
+}
+.priceSell{
     color: #ffacac;
     font-weight: 600;
+}
+.buyTr {
+    background-color: #291B1D;
+}
+.sellTr {
+    background-color: #0C1B2B;
+}
+.tr {
+    background-color: #0C1B2B;
 }
