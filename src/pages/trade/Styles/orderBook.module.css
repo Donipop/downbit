@@ -1,14 +1,19 @@
+.main {
+    width: 500px;
+    height: 600px;
+    overflow-y: scroll;
+}
 .bar {
     height: 40px;
     margin: 0;
     padding: 0;
-    background-color: #0C1B2B;
+    background-color: #0c1b2b;
 }
 .barBuy {
     height: 40px;
     margin: 0;
     padding: 0;
-    background-color: #291B1D;
+    background-color: #291b1d;
 }
 .barChild {
     background-color: #ffacac;
@@ -30,10 +35,10 @@
     height: 25px;
     margin: 0;
     padding: 0;
-    float : left;
+    float: left;
 }
 .sell {
-    background-color: #0E3460 !important;
+    background-color: #0e3460 !important;
     height: 25px;
     margin: 0;
     padding: 0;
@@ -49,33 +54,38 @@
     margin-left: 10px;
     font-weight: 400;
 }
-.table{
-    width: 500px;
-    height: 60px;
-    margin: 0;
-    padding: 0;
+.table {
+    width: 100%;
+    height: 100px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
 }
-.table td{
+.table td {
     border: 1px solid black;
+    height: 41px;
 }
 .price {
     color: #fff;
     font-weight: 600;
 }
-.priceBuy {
-    color: #0E3460;
+.priceDown {
+    color: #0062df;
     font-weight: 600;
 }
-.priceSell{
-    color: #ffacac;
+.priceUp {
+    color: #c84a31;
     font-weight: 600;
 }
 .buyTr {
-    background-color: #291B1D;
+    background-color: #291b1d !important;
 }
 .sellTr {
-    background-color: #0C1B2B;
+    background-color: #0c1b2b !important;
 }
 .tr {
-    background-color: #0C1B2B;
+    background-color: #0c1b2b !important;
 }

@@ -6,20 +6,20 @@ strong {
     font-weight: 900;
     font-size: 10pt;
 }
-ul {
+.ul {
     width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     display: inline-flex;
 }
-li {
+.li {
     padding: 10px 0 0 0;
     border-bottom: 1px solid #e5e5e5;
     background-color: #f5f5f5;
     display: inline-block;
 }
-li div:hover {
+.li div:hover {
     text-decoration: underline;
 }
 .btnA {

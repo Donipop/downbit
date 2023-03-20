@@ -5,13 +5,13 @@ export default function Order() {
             <article>
                 <div>
                     <ul className={styles.ul}>
-                        <li className={styles.buy}>
+                        <li className={`${styles.buy} ${styles.li}`}>
                             <div className={styles.btnA}>매수</div>
                         </li>
-                        <li className={styles.sell}>
+                        <li className={`${styles.sell} ${styles.li}`}>
                             <div className={styles.btnA}>매도</div>
                         </li>
-                        <li>
+                        <li className={styles.li}>
                             <div className={styles.btnA}>거래내역</div>
                         </li>
                     </ul>
