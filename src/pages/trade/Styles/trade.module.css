@@ -1,14 +1,41 @@
-.codeSelect {
-    width: 400px;
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+.left {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart {
+    height: 350px;
+    margin-bottom: 16px;
+}
+.orders {
+    display: flex;
+    flex-direction: row;
+}
+
+.orderBook {
+    width: 500px;
+    margin-right: 10px;
+}
+
 .order {
     width: 504px;
 }
-.orderBook {
-    width: 500px;
-    height: 690px;
+
+.codeSelect {
+    width: 100%;
 }
-.chart {
-    width: 700px;
-    height: 500px;
+.tradeHistory {
+    width: 100%;
 }

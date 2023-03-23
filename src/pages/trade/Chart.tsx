@@ -1,93 +1,55 @@
-import React, { useEffect, useRef } from "react";
-import ApexCharts from "apexcharts";
+import React, { useRef, useEffect } from "react";
+import {
+    CandlestickData,
+    ColorType,
+    createChart,
+    IChartApi,
+} from "lightweight-charts";
 
-interface Props {
-    data: number[][];
+interface CandleData {
+    open: number;
+    high: number;
+    low: number;
+    close: number;
+    time: {year: number, month: number, day: number};
 }
-
-function Chart({ data }: Props) {
-    const chartRef = useRef<HTMLDivElement>(null);
-    const wheelCount = useRef<number>(1);
-
+interface Props {
+    data: CandleData[];
+}
+export default function Chart({ data }: Props) {
+    
+    const chartRef = useRef<HTMLDivElement | null>(null);
+    const chartApiRef = useRef<IChartApi | null>(null);
     useEffect(() => {
-        if (!chartRef.current) {
-            return;
-        }
-
-        const options: ApexCharts.ApexOptions = {
-            series: [{ data }],
-            chart: {
-                type: "candlestick",
-                height: 350,
-                zoom: {
-                    enabled: true,
-                },
+        if (!chartRef.current) return;
+        const chart = createChart(chartRef.current, {
+            layout: {
+                textColor: 'white',
+                background: { type: ColorType.Solid, color: '#141A24' },
             },
-            title: {
-                text: "AAPL Historical",
-                align: "left",
-            },
-            xaxis: {
-                type: "datetime",
-            },
-            yaxis: {
-                tooltip: {
-                    enabled: true,
-                },
-            },
-        };
-
-        const chart = new ApexCharts(chartRef.current, options);
-        chart.render();
-
-        chartRef.current?.addEventListener("wheel", (e) => {
-            handleWheelEvent(e, chart);
+            width: 1014,
+            height: 360,
         });
 
+        const candleStickSeries = chart.addCandlestickSeries({
+            upColor: '#26a69a', downColor: '#ef5350', borderVisible: false,
+	        wickUpColor: '#26a69a', wickDownColor: '#ef5350',
+        });
+        
+        const candleStickData: CandlestickData[] = data;
+
+        const interval = setInterval(() => {
+            candleStickSeries.setData(candleStickData);
+        }, 10);
+
+        chartApiRef.current = chart;
+
+        
         return () => {
-            chartRef.current?.removeEventListener("wheel", (e) => {
-                handleWheelEvent(e, chart);
-            });
-            chart.destroy();
-        };
+            clearInterval(interval);
+            chart.remove();
+        }
     }, [data]);
 
-    const handleWheelEvent = (event: WheelEvent, chart: any | null) => {
-        if (!chart) {
-            return;
-        }
-        const mouseX: number = event.clientX - 63;
-        const xPositions = chart.w.globals.timescaleLabels;
-        if (xPositions.length === 0) return;
-        const position = xPositions.filter(
-            (item: any) => item.position < mouseX
-        );
-        if (position.length === 0) return;
-        // console.log(new Date(position[position.length-1].dateString).getTime());
-        // console.log(position[position.length-1]);
-        const leftCount = position.length - 1;
-        const rightCount = xPositions.length - position.length;
-        // console.log(xPositions);
-        console.log(`왼쪽으로 : ${leftCount} 오른쪽으로 : ${rightCount}`);
-        if(wheelCount.current >= 0){
-          if(event.deltaY > 0){
-            wheelCount.current++;
-          }else if(wheelCount.current > 0){
-            wheelCount.current--;
-          }
-        }
-        console.log(`wheelCount : ${wheelCount.current}`);
-        // zoom
-        const startX = new Date(position[position.length-1].dateString).getTime() + wheelCount.current * 0.01;
-        const endX = new Date(xPositions[position.length].dateString).getTime() - wheelCount.current * 0.01;
-        console.log(`startX : ${startX} endX : ${endX}`)
-        chart.zoomX(startX, endX);
-        
-        
-        
-    };
-
-    return <div id="candlestickChart" ref={chartRef}></div>;
-}
-
-export default Chart;
+    return <div ref={chartRef} className="chart" />;
+};

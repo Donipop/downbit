@@ -74,9 +74,9 @@ export default function Order() {
                             <button type="button" className={`${styles.btn} ${styles.btnBuySub}`}>초기화</button>
                             <button type="button" className={`${styles.btn} ${styles.btnBuy}`}>매수</button>
                         </div>
-                        
+{/*                         
                         <button type="button" className={`${styles.btn} ${styles.btnSell}`}>매도</button>
-                        <button type="button" className={`${styles.btn} ${styles.btnLogin}`}>로그인</button>
+                        <button type="button" className={`${styles.btn} ${styles.btnLogin}`}>로그인</button> */}
                     </div>
                 </div>
             </article>
