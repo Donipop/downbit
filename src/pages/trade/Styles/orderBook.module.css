@@ -70,16 +70,28 @@
     height: 41px;
 }
 .price {
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
 }
 .priceDown {
-    color: #0062df;
+    color: #0062df !important;
     font-weight: 600;
 }
 .priceUp {
-    color: #c84a31;
+    color: #c84a31 !important;
     font-weight: 600;
+}
+.fontRed {
+    color: #c84a31 !important;
+}
+.fontBlue {
+    color: #0062df !important;
+}
+.fontWhite {
+    color: #fff !important;
+}
+.fontGray {
+    color: #999 !important;
 }
 .buyTr {
     background-color: #291b1d !important;
@@ -89,6 +101,22 @@
 }
 .tr {
     background-color: #0c1b2b !important;
+}
+.ty01{
+    width: 75px;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 40px;
+}
+.ty02{
+    width: 75px;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 8pt;
 }
 .inner01 {
     width: 180px;
@@ -103,6 +131,7 @@
     font:inherit;
     display: table-cell;
     border-spacing: 0;
+    background-color: #0d131a !important;
 }
 .inner01 dl {
     border-bottom: 1px solid #84868c;
@@ -145,16 +174,25 @@
     word-break: break-all;
     margin: 0;
     display: block;
+    font-weight: 600;
 }
 .inner01 dd i {
     display: inline-block;
     line-height: 14px;
     color: #999;
     font-size: 10px;
+    font-style: normal;
 }
 .inner01 dd em {
     color: #999;
     display: block;
+    font-style: normal;
+}
+.priceUp em {
+    color: #c84a31 !important;
+}
+.priceDown em {
+    color: #0062df !important
 }
 .inner02 {
     width: 180px;
@@ -162,4 +200,32 @@
     padding: 0;
     position: relative;
     vertical-align: top;
+    background-color: #0d131a !important;
+}
+.inner02Div {
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+}
+.inner02 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.inner02 table tr {
+    width: 100%;
+    height: 21px;
+}
+.inner02 table tr:first-child {
+    height: 40px;
+    background-color: #141a24;
+}
+.inner02 table td {
+    width: 33.33%;
+    border: 1px solid black;
+    height: 20px;
 }
